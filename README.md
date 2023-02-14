@@ -1,7 +1,7 @@
 # Rounded calculator
 
 ## Features
-<p> This package allows users to calculate addition, substraction, division, multiplication and power of n root of active memory value. Also package users can print history of calculations and undo last actions to access specific history values. </p> 
+<p> This package allows users to calculate addition, substraction, division, multiplication and power of n root of active memory value. Also package users can print history of calculations and undo last actions to access specific history values. All calculations made with this package are rounded to 8 decimal points.</p> 
 
 ### Getting started 
 <p>Instalation of the Rounded Calculate package is done by running command <br/>
@@ -44,8 +44,8 @@ Removes last entry of calculator history.</p><br/>
 <p>calculator.reset_memory()<br/>
 Deletes all calculations history, sets next calculation base to 0.</p><br/>
 
-<p>calculator.reset_memory()<br/>
-Deletes all calculations history, sets next calculation base to 0.</p><br/>
+<p>calculator.print_history()<br/>
+Prints all calculations history.</p><br/>
 
 ## License
 
