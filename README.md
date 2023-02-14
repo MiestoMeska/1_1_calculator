@@ -1,6 +1,9 @@
-# Instruction how to use Rounded Calculate Module
+# Rounded calculator
 
-## How to install package 
+## Features
+<p> This package allows users to calculate addition, substraction, division, multiplication and power of n root of active memory value. Also package users can print history of calculations and undo last actions to access specific history values. </p> 
+
+### Getting started 
 <p>Instalation of the Rounded Calculate package is done by running command <br/>
 pip install rounded-calculate</p>
 
@@ -15,28 +18,35 @@ All the calculations made by the Calculator is based on value of the Calculator 
 Calculator class contains class of Memory which is storing all the history of calculations performed by using this package.   <br/>
 </p>
 
-### Calculator methods
+### Calculator functions
 <br/>
-<p>All Calculator methods returns calculation result where operand 1 is current value of last memory entry calculation and operand 2 is called method parameter.</p><br/>
+<p>All Calculator methods returns calculation result where operand 1 is current value of calculator memory and operand 2 is called method parameter. This do not apply for memory related methods.</p><br/>
 <br/>
 
 <p>calculator.add(n)<br/>
-Adds parameter n to last calculation of calculator outcome and returns new value.</p><br/>
-<br/>
+Adds parameter n to calculator memory value. Returns new calculator memory value.</p><br/>
+
 <p>calculator.substract(n)<br/>
-Substracts parameter n to last calculation of calculator outcome.</p><br/>
-<br/>
+Substracts parameter n from calculator memory value. Returns new calculator memory value.</p><br/>
+
 <p>calculator.multiply(n)<br/>
-Multiplies last calculation of calculator outcome by power of parameter n.</p><br/>
-<br/>
+Multiplies calculator memory value by power of parameter n. Returns new calculator memory value.</p><br/>
+
 <p>calculator.divide(n)<br/>
-Divides last calculation of calculator outcome by power of parameter n.</p><br/>
-<br/>
+Divides calculator memory value by power of parameter n. Returns new calculator memory value.</p><br/>
+
 <p>calculator.root(n)<br/>
-Adds parameter n to last calculation of calculator outcome.</p><br/>
-<br/>
-<p>calculator.undo(n)<br/>
+Adds parameter n to last calculation of calculator outcome. Returns new calculator memory value.</p><br/>
+
+<p>calculator.undo()<br/>
 Removes last entry of calculator history.</p><br/>
-<br/>
-<p>calculator.reset_memory(n)<br/>
+
+<p>calculator.reset_memory()<br/>
 Deletes all calculations history, sets next calculation base to 0.</p><br/>
+
+<p>calculator.reset_memory()<br/>
+Deletes all calculations history, sets next calculation base to 0.</p><br/>
+
+## License
+
+<p>Licensed under the MIT License.</p>
