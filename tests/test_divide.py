@@ -15,8 +15,8 @@ def test_divide():
         x = random()*50
         x = round(x,8)
         x1 = calc.divide(x)
-        x2 /= x
-        assert x1 == round(x2,8)
+        x2 = round(x2 / x, 8)
+        assert x1 == x2
 
 def test_divide_small():
     calc.reset_memory()
@@ -25,21 +25,18 @@ def test_divide_small():
         x = random()
         x = round(x,8)
         x1 = calc.divide(x)
-        x2 /= x
-        assert x1 == round(x2,8)
+        x2 = round(x2 / x, 8)
+        assert x1 == x2
 
 def test_divide_large():
     calc.reset_memory()
     x2 = 0
     for i in range(30):
-        try:
-            x = random()/1000000
-            x = round(x,8)
-            x1 = calc.divide(x)
-            x2 /= x
-            assert x1 == round(x2,8)
-        except ZeroDivisionError:
-            continue
+        x = random()/1000000
+        x = round(x,8)
+        x1 = calc.divide(x)
+        x2 = round(x2 / x, 8)
+        assert x1 == x2
 
 def test_divide_negative():
     calc.reset_memory()
@@ -48,8 +45,8 @@ def test_divide_negative():
         x = -random()/50
         x = round(x,8)
         x1 = calc.divide(x)
-        x2 /= x
-        assert x1 == round(x2,8)
+        x2 = round(x2 / x, 8)
+        assert x1 == x2
 
 def test_divide_inf():
     calc.reset_memory()
